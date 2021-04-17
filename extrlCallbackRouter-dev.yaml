@@ -1,0 +1,11 @@
+server:
+   port: 8070
+spring:
+   application:
+      name: extrlCallbackRouter
+kafka:
+   bootstrapAddress: localhost:9092
+   topic:
+      name: vault.api.v1.workflows.workflow_instance.external_operation.requests
+   groupId: extrlCallbackRouter   
+   auto-offset-reset: earliest
